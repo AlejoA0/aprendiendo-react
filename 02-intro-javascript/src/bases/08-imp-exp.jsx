@@ -3,12 +3,13 @@
 
 import heroes, { owners } from '../data/heroes';
 
-console.log(owners);
+/* console.log(owners); */
 
-const getHeroeById = (id) => heroes.find( ( heroe ) => heroe.id === id );
+export const getHeroeById = (id) => heroes.find( ( heroe ) => heroe.id === id );
 
-console.log( getHeroeById(2) );
+/* console.log( getHeroeById(2) ); */
 
 // find no sirve en este caso - usar filter
-const getHeroesByOwner = ( owner ) => heroes.filter( (heroe) => heroe.owner === owner);
-console.log( getHeroesByOwner('DC') );
+export const getHeroesByOwner = ( owner ) => heroes.filter( (heroe) => heroe.owner === owner);
+/* console.log( getHeroesByOwner('DC') ); */
+
